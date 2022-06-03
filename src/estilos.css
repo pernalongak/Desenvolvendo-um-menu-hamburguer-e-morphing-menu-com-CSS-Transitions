@@ -11,15 +11,15 @@ body {
 
 .header-wrapper {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(-45deg, #fad9a6, #bd2f28, #eb613b,#bd2f28 );
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
     animation: backgroundTransition 8s ease-in-out infinite;
+    position: relative;
 }
 
 h1 {
@@ -217,15 +217,15 @@ a:hover {
     height: 300px;
     width: 400px;
     margin: 3rem 0 0 0;
-    background-image:url("room.jpg");
+    background-image: url('./room.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: grayscale(0.5s);
-    color: #ffffff;
+    filter: grayscale(0.5);
+    color: white;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -252,11 +252,10 @@ a:hover {
     height: 100px;
     width: 100px;
     display: block;
-    border: 1px solid #ffffff;
+    border: 1px solid white;
     opacity: 0;
     transition: 0.3s;
 }
-
 .card-wrapper h2 {
     font-size: 40px;
     text-transform: uppercase;
